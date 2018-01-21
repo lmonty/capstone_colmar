@@ -5,7 +5,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .flex {
@@ -27,11 +27,6 @@ a {
   align-items: center;
   z-index: 20;
   justify-content: space-between;
-}
-
-.flex {
-  padding-left: 1.5rem;
-  align-items: center;
 }
 
 .logo-image {
@@ -68,36 +63,46 @@ nav a:hover {
 
 /* Block One */
 
-.block-1 {
-  background-color: rgb(216, 216, 216);
+.block {
   padding: 2rem 1.5rem;
+  align-items: center;
+  display: column;
+}
+
+.grey {
+  background-color: rgb(216, 216, 216);
 }
 
 .image {
   width: 60%;
+  margin-right: 1.5rem;
 }
 
-.image img {
+.image img,
+.image video {
   width: 100%;
 }
 
-.right {
+.learn {
   flex-direction: column;
   height: 100%;
-  max-width: 25%;
-  margin-left: 1.5rem;
+  max-width: 30%;
   justify-content: center;
   align-items: flex-start;
 }
 
-.right h1 {
+h1 {
   font-size: 2.25rem;
   font-weight: 800;
   opacity: 0.8;
 }
 
-.right h2 {
+h2 {
   font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.learn h2 {
   padding: 2rem 0;
 }
 
@@ -117,4 +122,166 @@ nav a:hover {
 .CTA a {
   color: white;
   padding: 0.5rem 0;
+}
+
+/* Block 2 */
+
+.image h1 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-weight: 200;
+}
+
+.quote {
+  font-size: 1rem;
+  line-height: 1.35;
+  letter-spacing: 0.025rem;
+}
+
+.credit {
+  font-size: 0.8rem;
+}
+
+.right {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.info-box {
+  height: 33%;
+  display: flex;
+  display: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  padding: 1rem;
+  transition: all 250ms ease-in;
+}
+
+.info-box img {
+  width: 35%;
+}
+
+.info-box-content {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100%;
+  width: 65%;
+  margin-left: 1.5rem;
+}
+
+.info-box a {
+  color: rgb(89, 144, 220);
+}
+
+.info-box a:hover {
+  color: black;
+  transition: color 500ms ease-in;
+}
+
+.info-box h2,
+.info-box p,
+.info-box a {
+  margin-bottom: 0.5rem;
+}
+
+.info-box:hover {
+  background-color: rgb(216, 216, 216);
+  transition: all 500ms ease-in;
+}
+
+/* Block 3 */
+
+.start-learn {
+  padding: 2rem 4.5rem;
+  background-color: rgb(234, 234, 234);
+}
+
+.heading {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 2rem;
+  margin-top:2rem;
+  margin-bottom: 2rem;
+}
+
+.course-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  display: inline-block;
+  width: 25%;
+  margin: 1rem;
+  background-color: white;
+  overflow: hidden;
+}
+
+.course-box:hover {
+  background-color: rgb(234, 234, 234);
+  transition: background-color 500ms ease-in;
+}
+
+.course-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text {
+  padding: 1rem 1rem 1.5rem 1rem;
+  align-items: center;
+}
+
+.course-box h2,
+.course-box p {
+  line-height: 1.5;
+}
+
+.course-box h2 {
+  padding-bottom: 1rem;
+}
+
+.courses {
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+}
+
+/* Thesis */
+
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  border-top: 1px solid lightgray;
+  display: flex;
+  display: column;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+.copyright {
+  padding-left: 1.5rem;
+}
+
+.terms {
+  padding-right: 1.5rem;
+}
+
+.terms li {
+  display: inline-block;
+  padding-right: 1rem;
 }
