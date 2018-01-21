@@ -1,7 +1,120 @@
 html {
-
+  font-size: 16px;
 }
 
 body {
-  
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+/* Navigation Bar */
+
+.nav-bar {
+  background-color: white;
+  width: 100%;
+  height: 4rem;
+  align-items: center;
+  z-index: 20;
+  justify-content: space-between;
+}
+
+.flex {
+  padding-left: 1.5rem;
+  align-items: center;
+}
+
+.logo-image {
+  height: 4rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  font-size: 2rem;
+}
+
+.academy {
+  color: lightgrey;
+}
+
+nav {
+  margin-right: 1.5rem;
+  display: flex;
+}
+
+nav li {
+  display: inline-block;
+  padding-right: 1rem;
+}
+
+nav a:hover {
+  color: rgb(74, 74, 74);
+  transition: color 150 ease-in;
+}
+
+/* Block One */
+
+.block-1 {
+  background-color: rgb(216, 216, 216);
+  padding: 2rem 1.5rem;
+}
+
+.image {
+  width: 60%;
+}
+
+.image img {
+  width: 100%;
+}
+
+.right {
+  flex-direction: column;
+  height: 100%;
+  max-width: 25%;
+  margin-left: 1.5rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.right h1 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  opacity: 0.8;
+}
+
+.right h2 {
+  font-size: 1.5rem;
+  padding: 2rem 0;
+}
+
+.CTA {
+  background-color: rgb(74, 74, 74);
+  width: 85%;
+  height: auto;
+  text-align: center;
+  transition: all 200ms ease-in;
+}
+
+.CTA:hover {
+  background-color: black;
+  transition: background-color 500ms ease-in;
+}
+
+.CTA a {
+  color: white;
+  padding: 0.5rem 0;
 }
